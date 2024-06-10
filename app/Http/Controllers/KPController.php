@@ -57,6 +57,7 @@ class KPController extends Controller {
         $kp->tanggal_masuk = $request->tanggal_masuk;
         $kp->tanggal_keluar = $request->tanggal_keluar;
         $kp->dosen_pembimbing = $request->dosen_pembimbing;
+        
         $kp->save();
 
         return back();

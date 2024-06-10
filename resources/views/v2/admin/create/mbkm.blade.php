@@ -1,5 +1,5 @@
 <x-layout-admin>
-    <form action="{{ route('admin.create.kp') }}" method="POST" style="max-width: 512px">
+    <form action="{{ route('admin.create.mbkm') }}" method="POST" style="max-width: 512px">
         @csrf
 
         <div class="mb-3">
@@ -27,7 +27,7 @@
             <input type="text" class="form-control" id="input-status" aria-describedby="status-help"
                 name="status" value="{{ old('status') }}">
 
-            @error('Status')
+            @error('status')
                 <div id="status-help" class="form-text text-danger">{{ $message }}</div>
             @enderror
         </div>
@@ -37,7 +37,7 @@
             <input type="text" class="form-control" id="input-perusahaan" aria-describedby="perusahaan-help" name="perusahaan"
                 value="{{ old('perusahaan') }}">
 
-            @error('Perushaaan')
+            @error('perusahaan')
                 <div id="perusahaan-help" class="form-text text-danger">{{ $message }}</div>
             @enderror
         </div>
@@ -47,27 +47,27 @@
             <input type="text" class="form-control" id="input-alamat" aria-describedby="alamat-help" name="alamat"
                 value="{{ old('alamat') }}">
 
-            @error('Alamat')
+            @error('alamat')
                 <div id="alamat-help" class="form-text text-danger">{{ $message }}</div>
             @enderror
         </div>
 
         <div class="mb-3">
             <label for="input-status_selesai" class="form-label">Status Selesai</label>
-            <input type="date" class="form-control" id="input-status_selesai" aria-describedby="status_selesai-help"
-                name="status_selesai" value="{{ old('status_selesai') }}">
+            <input type="text" class="form-control" id="input-status_selesai" aria-describedby="status_selesai-help"
+                name="status_selesai" value="Selesai">
 
-            @error('Status_Selesai')
+            @error('status_selesai')
                 <div id="status_selesai-help" class="form-text text-danger">{{ $message }}</div>
             @enderror
         </div>
 
         <div class="mb-3">
-            <label for="rekognisi-keluar" class="form-label">Rekognisi</label>
-            <input type="date" class="form-control" id="input-rekognisi" aria-describedby="rekognisi-help"
-                name="rekognisi" value="{{ old('rekognisi') }}">
+            <label for="input-rekognisi" class="form-label">Rekognisi</label>
+            <input type="text" class="form-control" id="input-rekognisi" aria-describedby="rekognisi-help"
+                name="rekognisi_sks" value="{{ old('rekognisi_sks') }}">
 
-            @error('Rekognisi')
+            @error('rekognisi_sks')
                 <div id="rekognisi-help" class="form-text text-danger">{{ $message }}</div>
             @enderror
         </div>

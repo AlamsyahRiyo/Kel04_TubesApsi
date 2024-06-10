@@ -48,12 +48,11 @@ class MBKMController extends Controller {
         $mbkm = new MBKM();
         $mbkm->nim = $request->nim;
         $mbkm->nama = $request->nama;
-        $mbkm->lokasi = $request->lokasi;
-        $mbkm->kelompok = $request->kelompok;
-        $mbkm->tema = $request->tema;
-        $mbkm->dosen = $request->dosen;
-        $mbkm->periode = $request->periode;
-        $mbkm->catatan = $request->catatan;
+        $mbkm->status = $request->status;
+        $mbkm->perusahaan = $request->perusahaan;
+        $mbkm->alamat = $request->alamat;
+        $mbkm->status_selesai = $request->status_selesai;
+        $mbkm->rekognisi_sks = $request->rekognisi_sks;
         $mbkm->save();
 
         return back();

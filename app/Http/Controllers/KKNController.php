@@ -50,7 +50,6 @@ class KKNController extends Controller {
         $kkn->tema = $request->tema;
         $kkn->dosen = $request->dosen;
         $kkn->periode = $request->periode;
-        $kkn->catatan = $request->catatan;
         $kkn->save();
 
         return back();

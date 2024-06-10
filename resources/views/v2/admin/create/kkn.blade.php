@@ -1,5 +1,5 @@
 <x-layout-admin>
-    <form action="{{ route('admin.create.kp') }}" method="POST" style="max-width: 512px">
+    <form action="{{ route('admin.create.kkn') }}" method="POST" style="max-width: 512px">
         @csrf
 
         <div class="mb-3">
@@ -57,7 +57,7 @@
             <input type="text" class="form-control" id="input-dosen" aria-describedby="dosen-help"
                 name="dosen" value="{{ old('dosen') }}">
 
-            @error('Dosen')
+            @error('dosen')
                 <div id="dosen-help" class="form-text text-danger">{{ $message }}</div>
             @enderror
         </div>
@@ -67,7 +67,7 @@
             <input type="date" class="form-control" id="input-periode" aria-describedby="periode-help"
                 name="periode" value="{{ old('periode') }}">
 
-            @error('Periode')
+            @error('periode')
                 <div id="periode-help" class="form-text text-danger">{{ $message }}</div>
             @enderror
         </div>
